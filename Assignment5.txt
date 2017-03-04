@@ -1,99 +1,118 @@
 1)hadoop in laymen terms:
 
-Hadoop is the core platform for structuring Big Data.
+Hadoop can be thought of as a set of open source programs and procedures that is essentially they are free for anyone to use or modify, with a few exceptions which anyone can use as the "backbone" of their big data operations.
 
-Big Data is large volumes of structured and unstructured data. This data is what organizations collect on a daily basis.
+Big data is a term that describes the large volume of data – both structured and unstructured – that inundates a business on a day-to-day basis.
+Big data can be analyzed for insights that lead to better decisions and strategic business moves.
 
-The amount of data is not the important part, but the information gathered from that data is key. Collecting and analyzing Big Data gives organizations enhanced insight, decision making, and process automation.
+The 4 Modules of Hadoop:
 
-Big data skills are in high demand. Now business users can profile, transform and cleanse data � on Hadoop or anywhere else it may reside � using an intuitive user interface.
+Hadoop is made up of "modules", each of which carries out a particular task essential for a computer system designed for big data analytics.
+1)Distributed File-System
+2)MapReduce
+3)Hadoop Common
+4)YARN
 
-Hadoop is an open source, Java-based programming framework that supports the processing and storage of extremely large data sets in a distributed computing environment. It is part of the Apache project sponsored by the Apache Software Foundation.
-
+Development of Hadoop began when forward-thinking software engineers realised that it was quickly becoming useful for anybody to be able to store and analyze datasets far larger than can practically be stored and accessed on one physical storage device (such as a hard disk).
+It was released in 2005 by the Apache Software Foundation, a non-profit organization which produces open source software which powers much of the Internet behind the scenes.
+The flexible nature of a Hadoop system means companies can add to or modify their data system as their needs change, using cheap and readily-available parts from any IT vendor.
+Today, it is the most widely used system for providing data storage and processing across "commodity" hardware - relatively inexpensive, off-the-shelf systems linked together, as opposed to expensive, bespoke systems custom-made for the job in hand.
 
 
 2)components of hadoop framework:
 
-Hadoop Distributed File System � Abbreviated as HDFS, it is primarily a file system similar to many of the already existing ones. However, it is also a virtual file system.
+Hadoop Distributed File System->Hadoop Distributed File System, which allows data to be stored in an easily accessible format, across a large number of linked storage devices.
+A "file system" is the method used by a computer to store data, so it can be found and used. Normally this is determined by the computer's operating system, however a Hadoop system uses its own file system which sits "above" the file system of the host computer - meaning it can be accessed using any computer running any supported OS.
 
-There is one notable difference with other popular file systems, which is, when we move a file in HDFS, it is automatically split into smaller files. These smaller files are then replicated on a minimum of three different servers, so that they can be used as an alternative to unforeseen circumstances. This replication count isn�t necessarily hard-set, and can be decided upon as per requirements.
+Hadoop MapReduce-> MapReduce provides the basic tools for poking around in the data.
+MapReduce is named after the two basic operations this module carries out - reading data from the database, putting it into a format suitable for analysis (map), and performing mathematical operations i.e counting the number of males aged 30+ in a customer database (reduce).
 
-Hadoop MapReduce->MapReduce is mainly the programming aspect of Hadoop that allows processing of large volumes of data.
+Hadoop Common->Hadoop Common provides the tools (in Java) needed for the user's computer systems (Windows, Unix or whatever) to read data stored under the Hadoop file system.
 
-There is also a provision that breaks down requests into smaller requests, which are then sent to multiple servers. This allows utilization of the scalable power of the CPU.
+YARN->YARN manages resources of the systems storing the data and running the analysis.
 
-HBASE->HBASE happens to be a layer that sits atop the HDFS and has been developed by means of the Java programming language. HBASE primarily has the following aspects �
+HBASE->HBase is a distributed column-oriented database built on top of the Hadoop file system. It is an open-source project and is horizontally scalable.
+HBase is a data model that is similar to Google’s big table designed to provide quick random access to huge amounts of structured data. 
+One can store the data in HDFS either directly or through HBase. Data consumer reads/accesses the data in HDFS randomly using HBase. HBase sits on top of the Hadoop File System and provides read and write access. 
+It leverages the fault tolerance provided by the Hadoop File System (HDFS).
 
-Non relational
-Highly scalable
-Fault tolerance
-Every single row that exists in HBASE is identified by means of a key. The number of columns is also not defined, but rather grouped into column families.
+Zookeeper->ZooKeeper is a centralized service for maintaining configuration information, naming, providing distributed synchronization, and providing group services.
+All of these kinds of services are used in some form or another by distributed applications. 
 
-Zookeeper->This is basically a centralized system that maintains the following
-
-Configuration information
-Naming information
-Synchronization information
-Besides these, Zookeeper is also responsible for group services and is utilized by HBASE. It also comes to use for MapReduce programs.
-
-Solr/Lucene->This is nothing but a search engine. Its libraries are developed by Apache and required over 10 years to be developed in its present robust form.
-
-Programming Languages � There are basically two programming languages that are identified as original Hadoop programming languages,
+Programming Languages->The main programming languages in Hadoop are
 
 *HIVE
 *PIG
-Besides these, there are a few other programming languages that can be used for writing programs, namely C, JAQL and Java. We can also make direct usage of SQL for interaction with the database, although that requires the use of standard JDBC or ODBC drivers.
+The other programming languages include C,JAQL and Java. 
+We can also make direct usage of SQL interaction with the database, instead of standard JDBC or ODBC drivers.
 
 
 
 3)Reason why you should learn data analytics:
 
-1.Data analytics is now a priority for top organizations
+1. Soaring Demand for Analytics Professionals:
+There are more job opportunities in Big Data management and Analytics than there were last year and many IT professionals are prepared to invest time and money for the training.
+Technology professionals who are experienced in Analytics are in high demand as organizations are looking for ways to exploit the power of Big Data. 
+This apparent surge is due to the increased number of organizations implementing Analytics and thereby looking for Analytics professionals.
 
-With market competition stiffening, top organizations are turning to data analytics to identify new market opportunities for their services and products. As things stand today, 77% of top organizations consider data analytics a critical component of business performance. What this means is that big data professionals have a huge influence on company policies and marketing strategies.
+2.Huge Job Opportunities & Meeting the Skill Gap:
+The demand for Analytics skill is going up steadily but there is a huge deficit on the supply side.
+This is happening globally and is not restricted to any part of geography.
+In spite of Big Data Analytics being a ‘Hot’ job, there is still a large number of unfilled jobs across the globe due to shortage of required skill.
+India, currently has the highest concentration of analytics globally.
+In spite of this, the scarcity of data analytics talent is particularly acute and demand for talent is expected to be on the higher side  as more global organizations are outsourcing their work.
 
-2.Increasing job opportunities
+3.Salary Aspects:
+Strong demand for Data Analytics skills is boosting the wages for qualified professionals and making Big Data pay big bucks for the right skill. 
+This phenomenon is being seen globally where countries like Australia and the U.K are witnessing this ‘Moolah Marathon’.
+According to the 2015 Skills and Salary Survey Report published by the Institute of Analytics Professionals of Australia (IAPA), the annual median salary for data analysts is $130,000, up four per cent from last year.
+According to The Indian Analytics Industry Salary Trend Report by Great Lakes Institute of Management, the average salaries for analytics professionals in India was up by 21% in 2015 as compared to 2014. 
+The report also states that 14% of all analytics professionals get a salary of more than Rs. 15 lakh per annum.
 
-As companies begin to realize that they have no capacity to comprehensively gather, interpret and use data, they are beginning to look for specialists who can do so. If you look at all the major job opportunity platforms such as Indeed and Dice, you will see that there are increasing number of job postings looking for data analysts and consultants. The demand for professionals with this particular skill set is on the rise while the supply remains low. This creates great job opportunities for individuals within this field.
+4.Big Data Analytics: A Top Priority in a lot of Organizations
+According to the ‘Peer Research – Big Data Analytics’ survey, it was concluded that Big Data Analytics is one of the top priorities of the organizations participating in the survey as they believe that  it improves the performances of their organizations.
+Based on the responses, it was found that approximately 45% of the surveyed believe that Big Data analytics will enable much more precise business insights, 38% are looking to use Analytics to recognize sales and market opportunities. 
+More than 60% of the respondents are depending on Big Data Analytics to  boost the organization’s social media marketing abilities.
 
-3.Increasing pay for data analytics professionals
+5.Adoption of Big Data Analytics is Growing:
+New technologies are now making it easier to perform increasingly sophisticated data analytics on a very large and diverse datasets. This is evident as the report from The Data Warehousing Institute (TDWI) shows.
+According to this report, more than a third of the respondents are currently using some form of advanced analytics on Big Data,  for Business Intelligence, Predictive Analytics and Data Mining tasks.
+With Big Data Analytics providing an edge over the competition, the rate of implementation of the necessary Analytics tools has increased exponentially.
 
-As the demand steadily increases and the supply remains low, data analytics professionals are getting paid more and more. In India, as it stands today, data analytics professionals are paid on average 50% more than their counterparts in other IT based professions. This trend is evident across the globe as more and more companies realize just how important these professionals are to the organization.
+6. Analytics: A Key Factor in Decision Making
+Analytics is a key competitive resource for many companies. There is no doubt about that. According to the ‘Analytics Advantage’ survey overseen by Tom Davenport, ninety six percent of respondents feel that analytics will become more important to their organizations in the next three years. 
+This is because there is a huge amount of data that is not being used and at this point, only rudimentary analytics is being done. 
+Even though there is a fight for the title of ‘Greatest Benefit of Big Data Analytics’, one thing is undeniable and stands out the most: Analytics play an important role in driving business strategy and making effective business decisions.
 
-4.Big data analytics is everywhere
+7. The Rise of Unstructured and Semistructured Data Analytics:
+The ‘Peer Research – Big Data Analytics’ survey clearly reports that there is a huge growth when it comes to unstructured and semistructured data analytics.
+Eighty four percent of the respondents have mentioned that the organization they work for are currently processing and analyzing unstructured data sources, including weblogs, social media, e-mail, photos, and video. 
+The remaining respondents have indicated that steps are being taken to implement them in the next 12 to 18 months.
 
-Just as it has become imperative to use computers in today�s workplace, the use data analytics professionals to foster growth is slowly catching on. There is practically no sector which has remained untouched from the reach of Data Analytics.
+8. Big Data Analytics is Used Everywhere!
+It is a given that there is a huge demand for Big Data Analytics owing to its awesome features.
+The tremendous growth is also due to the varied domain across which Analytics is being utilized.
+It has been used across various industries like healthcare,consumer,energy,manufacturing,technology,banking etc.
 
-5.You will have various job titles from which to choose
+9. Surpassing Market Forecast / Predictions for Big Data Analytics:
+Big Data Analytics has  topped a survey carried out by Nimbus Ninety, as the most disruptive technologies that will have the biggest influence in three years’ time. Added to this, there are more market forecasts that support this:
+->According to IDC, the Big Data Analytics market will reach $125 billion worldwide in 2015.
+*IIA states that Big Data Analytics tools will be the first line of defense, combining machine learning, text mining and ontology modeling to provide holistic and integrated security threat prediction, detection, and deterrence and prevention programs.
+*According to the survey ‘The Future of Big Data Analytics – Global Market and Technologies Forecast – 2015-2020’, Big Data Analytics Global Market will grow by 14.4% CAGR over this period.
+*The Big Data Analytics Global Market for Apps and Analytics Technology will grow by 28.2% CAGR, for  Cloud Technology will grow by 16.1% CAGR, for Computing Technology will grow by 7.1% CAGR, for NoSQL Technology will grow by 18.9% CAGR  over the entire 2015-2020 period.
 
-A data analytics professional has a broad range of job titles and fields from which to choose. Since big data is used almost everywhere today, you can choose to be a:
-
--> Metrics and Analytics Specialist
-
-->Data Analyst
-
--> Big Data Engineer
-
--> Data Analytics Consultant
-
-These are just some of the job titles you could hold in big organizations such as IBM, ITrend, Opera, Oracle, etc and the possibilities are immense.
-
-6.You will be at the core of decision-making in the company
-
-One of the leading causes of job place dissatisfaction is that most employees feel as if they do not have any decision-making power. They often feel like just another cog in the great corporate wheel. As a data analytics professional, you will be at the core of decision-making in your chosen company. In fact, you will be an integral part of business decisions and future strategies, thus giving you an important role and purpose within the organization.
-
-7.Adoption rate of big data analytics is high
-
-Just as companies started turning to social media for brand advertising and customer engagement, they have also started turning to data analytics as well. Today, it is almost impossible to find any brand that does not have social media presence. The same will be true as far as data analytics adaptation is concerned. In the very near future, every company will need data analytics professionals. This makes it a wise career move that actually has a future in business.
-
-8.Data analytics is taking over faster than expected
-
-A survey conducted by Nimbus Ninety shows that data analytics is taking over much faster than was projected. The survey found that data analytics tops the list of technologies to look out for in the coming 3 years.
-
-9.It represents perfect freelancing opportunities
-
-In the near future, a vast majority of the workforce will not want to be tied to just one employer. People are steadily looking for ways to diversify their sources of income and methods through which they can find the perfect work-life balance. Data analytics, being that it is a matter of studying numbers, trends, and data in general, gives you the perfect opportunity to become a well-paid freelancer or consultant for some of the biggest firms in the world. Majorly IT based, this kind of job can be done from anywhere in the world at any given time. Therefore, you do not have to be tied to a desk.
-
-10.Develop new revenue streams
-
-With your ability to analyze and put good data information to good use, you can easily identify new and unexploited streams of revenue generation. This is one of the best ways to enrich your life by increasing your earnings.
+10. Numerous Choices in Job Titles and Type of Analytics :
+From a career point of view, there are so many option available, in terms of domain as well as nature of job. Since Analytics is utilized in varied fields, there are numerous job titles for one to choose from.
+->Big Data Analytics Business Consultant
+->Big Data Analytics Architect
+->Big Data Engineer
+->Big Data Solution Architect
+->Big Data Analyst
+->Analytics Associate
+->Business Intelligence and Analytics Consultant
+->Metrics and Analytics Specialist
+Big Data Analytics career is deep and one can choose from the 3 types of data analytics depending on the Big Data environment.
+*Prescriptive Analytics
+*Predictive Analytics
+*Descriptive Analytics
+A huge array of organizations like Ayata, IBM, Alteryx, Teradata, TIBCO, Microsoft, Platfora, ITrend, Karmasphere, Oracle, Opera, Datameer, Pentaho, Centrofuge, FICO, Domo, Quid, Saffron, Jaspersoft, GoodData, Bluefin Labs, Tracx, Panaroma Software, and countless more are utilizing Big Data Analytics for their business needs and a huge job opportunities are possible with them.
